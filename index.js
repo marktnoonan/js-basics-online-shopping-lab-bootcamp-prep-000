@@ -21,7 +21,7 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   
-  const descriptionOfItems = cart.map(item => `you have ${item.itemName} at $${item.itemPrice}`).join(', ')
+  const descriptionOfItems = cart.map(item => `${item.itemName} at $${item.itemPrice}`).join(', ')
   const descriptionOfCart = `In your cart, you have ${descriptionOfItems}.`
   return descriptionOfCart
   
