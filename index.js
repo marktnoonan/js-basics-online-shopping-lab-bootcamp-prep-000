@@ -40,7 +40,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  
+  card.findIndex()
 }
 
 function placeOrder(cardNumber) {
