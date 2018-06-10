@@ -35,7 +35,7 @@ function total() {
   // write your code here
   return cart.reduce((item, accumulator) => {
     return accumulator += item.itemPrice
-  })
+  }, 0)
 }
 
 function removeFromCart(item) {
