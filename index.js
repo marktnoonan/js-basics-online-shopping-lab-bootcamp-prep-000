@@ -11,6 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ cart.push({[item]: randomPrice()})
 }
 
 function viewCart() {
@@ -30,5 +31,5 @@ function placeOrder(cardNumber) {
 }
 
 function randomPrice() {
-  return 
+  return Math.floor((Math.random() * 100) + 1)
 }
