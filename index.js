@@ -33,9 +33,9 @@ function viewCart() {
 
 function total() {
   // write your code here
-  return cart.reduce((item, accumulator) => {
+  return cart.reduce((accumulator, item) => {
     return accumulator += item.itemPrice
-  }, 0)
+  })
 }
 
 function removeFromCart(item) {
