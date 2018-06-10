@@ -43,6 +43,8 @@ function removeFromCart(item) {
   const indexToRemove = cart.findIndex(product => product.itemName === item)
   if (indexToRemove > 0){
     cart.splice(indexToRemove, 1)    
+  } else {
+    return "That item is not in your cart."
   }
 
 }
