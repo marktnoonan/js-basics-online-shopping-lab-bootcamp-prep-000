@@ -22,11 +22,10 @@ function viewCart() {
   }
   
   let descriptionOfItems = cart.map(item => `${item.itemName} at $${item.itemPrice}`)
-  
-  const removedLastItemDescription = `, and ${descriptionOfItems.pop()}`
-  
-  descriptionOfItems = descriptionOfItems.join(', ') + removedLastItemDescription
-  
+  if (cart.length > 1) {
+    const removedLastItemDescription = `, and ${descriptionOfItems.pop()}`
+    descriptionOfItems = descriptionOfItems.join(', ') + removedLastItemDescription
+  }
   const descriptionOfCart = `In your cart, you have ${descriptionOfItems}.`
   return descriptionOfCart
   
