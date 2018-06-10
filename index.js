@@ -41,8 +41,10 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   const indexToRemove = cart.findIndex(product => product.itemName === item)
-  if
-  cart.splice(indexToRemove, 1)
+  if (indexToRemove > 0){
+    cart.splice(indexToRemove, 1)    
+  }
+
 }
 
 function placeOrder(cardNumber) {
